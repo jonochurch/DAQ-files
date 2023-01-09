@@ -12,7 +12,7 @@ def plot_route(data):
   fig.update_traces(#mode='lines',
                     marker=dict(
                         size=5,
-          color=(df['Speed']*3.6), #set color equal to a variable
+          color=(data['Speed']*3.6), #set color equal to a variable
           colorscale='Turbo', # one of plotly colorscales
           showscale=True))
   fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
