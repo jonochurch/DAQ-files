@@ -1,5 +1,14 @@
 import plotly.express as px
 import plotly.graph_objects as go
+import zipfile
+import pandas as pd
+
+def get_data(run):
+    archive = zipfile.ZipFile(f'{run}', 'r')    
+    df=pd.read_csv((archive.open(f'{run[:-4]}.miq')), skiprows=57, skipfooter=26,names=['sample', 'Lat','Lon', 'Alt','Time', 'Speed'])
+    file = pd.read_csv(archive.open(f'{run[:-4]}.csv'))
+    return(df,file)
+
 def plot_route(data):
   f= open(".mapbox_token.txt","w+")
   f.write("pk.eyJ1Ijoiam9ub2NodXJjaCIsImEiOiJja3VuZjQzbjEyNTNyMm5vZnF4cWNnbjR5In0.EtsN55_VNAPh07GqeWUgcA")
@@ -26,3 +35,4 @@ def plot_route(data):
   fig.update_layout(margin={"r":0,"t":0,"l":0,"b":0})
 
   return fig.show()
+
