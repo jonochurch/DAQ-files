@@ -34,7 +34,7 @@ def build_leverage_data(position,ratio,t,name):
     points=position
   travel2=float(t)
   points2=np.round(np.linspace(0,travel2,100),4) #(use retstep=True to return step)
-  spl = UnivariateSpline(points, ratio, k=4)
+  spl = UnivariateSpline(points, ratio, k=3)
   lr2= np.round(spl(points2),4)
   
 
