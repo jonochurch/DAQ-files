@@ -1,0 +1,33 @@
+MotionIQ Session Notes: OPPOFindX5Pro-02-26-02
+
+Rating: 
+Location: Te Mounga
+Conditions: 
+Keywords: 
+Notes: 
+
+Front Axle
+========================
+Fork Model: 
+Tire Pressure: 
+Spacers: 
+Preload: 
+High Speed Damp: 
+Low Speed Damp:  
+High Speed Rebound: 
+Low Speed Rebound:  
+Spring Rate: 
+spring Setting: 
+
+Rear Axle
+========================
+Shock Model: 
+Tire Pressure: 
+Spacers: 
+Preload: 
+High Speed Damp: 
+Low Speed Damp:  
+High Speed Rebound: 
+Low Speed Rebound:  
+Spring Rate: 
+spring Setting: 
